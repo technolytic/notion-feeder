@@ -2,7 +2,7 @@ name: Get Feed
 
 on:
   schedule:
-    - cron: '10 3 * * *' 
+    - cron: '30 12 * * *' 
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       RUN_FREQUENCY: 1 # in seconds
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: 14
 
